@@ -1,0 +1,52 @@
+/* 
+    布局文件
+    Created on : 2015-1-25, 14:21:34
+    Author     : ltc
+*/
+@left-side-width:210px;
+.bg-variant(@bg-color){
+    background-color:@bg-color;
+}
+#left,#content,.outer{
+    min-height:600px;
+}
+#top,.wrapper,.main,.footer,#content{
+.clearfix();
+
+}
+.main{
+    position:relative;
+    .bg-variant(#f4f4f4);
+   // overflow:hidden;
+}
+#top{
+margin-bottom:50px;
+}
+#left{
+    position:relative;
+    float:left;
+    margin-right:-100%;
+    width:@left-side-width;
+    .bg-variant(#f4f4f4);
+    overflow:hidden;
+}
+#content{
+//    position:relative;
+    width:100%;
+    float:left;
+}
+.outer{
+    position:relative;
+    margin-left:@left-side-width;
+    padding:10px;
+    //.bg-variant(lighten(#ff0000,20%));
+}
+#right{
+    position:fixed;
+    right:-@left-side-width;
+    width:@left-side-width;
+    .bg-variant(lighten(#ff0000,40%));
+    height:250px;
+}
+
+

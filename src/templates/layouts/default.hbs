@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    <!--IE Compatibility modes-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Mobile first-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <link rel="stylesheet" href="{{assets}}/css/zui.min.css">
+    <link rel="stylesheet" href="{{assets}}/css/zui-theme.min.css">
+
+    <!-- Metis Theme stylesheet -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="{{assets}}/lib/ieonly/html5shiv.js"></script>
+    <script src="{{assets}}/lib/ieonly/respond.min.js"></script>
+    <![endif]-->
+    <!--For Development Only. Not required -->
+    
+
+</head>
+<body class="skin-blue">
+
+<div class="wrapper">
+
+    <div id="top">
+            {{>nav}}
+    </div>
+    <!--top end-->
+
+    <div class="main">
+
+            <div id="left">
+                {{>left1}}
+            </div>
+          <!--top left-->
+
+          <div id="content">
+              <div class="outer">
+                  {{>body}}
+              </div>
+          </div>
+        <!--top content-->
+
+          <div id="right">
+              {{>right}}
+          </div>
+         <!--top right-->
+
+    </div>
+    <!--top main-->
+</div>
+<!--top wrapper-->
+
+<footer class="Footer bg-dark dker">
+    <p>2015&copy; Metis Bootstrap Admin Template</p>
+</footer>
+<!-- /#footer -->
+
+<script src="{{assets}}/lib/jquery/jquery.js"></script>
+<script src="{{assets}}/js/zui.min.js"></script>
+<script src="{{assets}}/lib/ieonly/holder.js"></script>
+
+</body>
+</html>

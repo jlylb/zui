@@ -1,0 +1,304 @@
+---
+layout: test
+title: ffffff
+icon: fa fa-plus fa-3x
+---
+<div class="checkbox" id="myCheckbox">
+  <label class="checkbox-custom" data-initialize="checkbox">
+    <input class="sr-only" type="checkbox" value="">
+    <span class="checkbox-label">Custom checkbox unchecked on page load</span>
+  </label>
+</div>
+<div class="checkbox" id="myCheckbox2">
+  <label class="checkbox-custom" data-initialize="checkbox">
+    <input class="sr-only" checked="checked" type="checkbox" value="">
+    <span class="checkbox-label">Custom checkbox checked on page load</span>
+  </label>
+</div>
+<div class="checkbox" id="myCheckbox3">
+  <label class="checkbox-custom" data-initialize="checkbox">
+    <input class="sr-only" disabled="disabled" type="checkbox" value="">
+    <span class="checkbox-label">Disabled custom checkbox unchecked on page load</span>
+  </label>
+</div>
+<div class="checkbox" id="myCheckbox4">
+  <label class="checkbox-custom" data-initialize="checkbox">
+    <input class="sr-only" checked="checked" disabled="disabled" type="checkbox" value="">
+    <span class="checkbox-label">Disabled custom checkbox checked on page load</span>
+  </label>
+</div>
+</div>
+<div class="input-group input-append dropdown combobox" data-initialize="combobox" id="myCombobox">
+  <input type="text" class="form-control">
+  <div class="input-group-btn">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+    <ul class="dropdown-menu dropdown-menu-right">
+      <li data-value="1"><a href="#">One</a></li>
+      ...
+    </ul>
+  </div>
+</div>
+<div class="input-group input-append dropdown combobox" data-initialize="combobox" id="myCombobox">
+	<input type="text" class="form-control">
+	<div class="input-group-btn">
+		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+		<ul class="dropdown-menu dropdown-menu-right">
+			<li data-value="1"><a href="#">One</a></li>
+			<li data-value="2"><a href="#">Two</a></li>
+			<li data-value="3"><a href="#">Three</a></li>
+			<li data-value="4" ><a href="#">Four</a></li>
+			<li data-value="Item Five" data-foo="bar" data-fizz="buzz"><a href="#">Item Five</a></li>
+		</ul>
+	</div>
+</div>
+<div class="loader" data-initialize="loader" id="myLoader"></div>
+<div class="loader" data-initialize="loader" data-delay="500" id="myLoader2"></div>
+
+<div class="pillbox" data-initialize="pillbox" id="myPillbox">
+  <ul class="clearfix pill-group">
+    <li class="btn btn-default pill" data-value="foo">
+      <span>Item Title</span>
+      <span class="glyphicon glyphicon-close">
+        <span class="sr-only">Remove</span>
+      </span>
+    </li>
+    ....
+    <li class="pillbox-input-wrap btn-group">
+      <a class="pillbox-more">and <span class="pillbox-more-count"></span> more...</a>
+      <input type="text" class="form-control dropdown-toggle pillbox-add-item" placeholder="add item">
+      <button type="button" class="dropdown-toggle sr-only">
+        <span class="caret"></span>
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      <ul class="suggest dropdown-menu" role="menu" data-toggle="dropdown" data-flip="auto"></ul>
+    </li>
+  </ul>
+</div>
+<div class="radio" data-initialize="radio" id="myCustomRadio">
+  <label class="radio-custom">
+    <input class="sr-only" name="radioEx1" type="radio" value="option1">
+    Browser-independent radio unchecked on page load
+  </label>
+</div>
+
+<div class="radio checked" data-initialize="radio" id="myCustomRadio2">
+  <label class="radio-custom">
+    <input class="sr-only" checked="checked" name="radioEx1" type="radio" value="option2">
+    Browser-independent radio checked on page load
+  </label>
+</div>
+
+<div class="radio checked" data-initialize="radio" id="myCustomRadio3">
+  <label class="radio-custom">
+    <input class="sr-only" checked="checked" disabled="disabled" name="radio1b" type="radio">
+    <span class="radio-label">Disabled custom appearance radio selected on page load</span>
+  </label>
+</div>
+
+<div class="radio" data-initialize="radio" id="myCustomRadio4">
+  <label class="radio-custom">
+    <input class="sr-only" disabled="disabled" name="radioEx2" type="radio" value="option3">
+    Disabled browser-independent radio unchecked on page load
+  </label>
+</div>
+
+
+
+<div class="repeater" id="myRepeater">
+    <div class="repeater-header">
+      <div class="repeater-header-left">
+        <span class="repeater-title">Awesome Repeater</span>
+        <div class="repeater-search">
+          <div class="search input-group">
+            <input type="search" class="form-control" placeholder="Search"/>
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button">
+                <span class="glyphicon glyphicon-search"></span>
+                <span class="sr-only">Search</span>
+              </button>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="repeater-header-right">
+        <div class="btn-group selectlist repeater-filters" data-resize="auto">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            <span class="selected-label">&nbsp;</span>
+            <span class="caret"></span>
+            <span class="sr-only">Toggle Filters</span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li data-value="all" data-selected="true"><a href="#">all</a></li>
+            <li data-value="some"><a href="#">some</a></li>
+            <li data-value="others"><a href="#">others</a></li>
+          </ul>
+          <input class="hidden hidden-field" name="filterSelection" readonly="readonly" aria-hidden="true" type="text"/>
+        </div>
+        <div class="btn-group repeater-views" data-toggle="buttons">
+          <label class="btn btn-default active">
+            <input name="repeaterViews" type="radio" value="list"><span class="glyphicon glyphicon-list"></span>
+          </label>
+          <label class="btn btn-default">
+            <input name="repeaterViews" type="radio" value="thumbnail"><span class="glyphicon glyphicon-th"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="repeater-viewport">
+      <div class="repeater-canvas"></div>
+      <div class="loader repeater-loader"></div>
+    </div>
+    <div class="repeater-footer">
+      <div class="repeater-footer-left">
+        <div class="repeater-itemization">
+          <span><span class="repeater-start"></span> - <span class="repeater-end"></span> of <span class="repeater-count"></span> items</span>
+          <div class="btn-group selectlist" data-resize="auto">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+              <span class="selected-label">&nbsp;</span>
+              <span class="caret"></span>
+              <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li data-value="5"><a href="#">5</a></li>
+              <li data-value="10" data-selected="true"><a href="#">10</a></li>
+              <li data-value="20"><a href="#">20</a></li>
+              <li data-value="50" data-foo="bar" data-fizz="buzz"><a href="#">50</a></li>
+              <li data-value="100"><a href="#">100</a></li>
+            </ul>
+            <input class="hidden hidden-field" name="itemsPerPage" readonly="readonly" aria-hidden="true" type="text"/>
+          </div>
+          <span>Per Page</span>
+        </div>
+      </div>
+      <div class="repeater-footer-right">
+        <div class="repeater-pagination">
+          <button type="button" class="btn btn-default btn-sm repeater-prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous Page</span>
+          </button>
+          <label class="page-label" id="myPageLabel">Page</label>
+          <div class="repeater-primaryPaging active">
+            <div class="input-group input-append dropdown combobox">
+              <input type="text" class="form-control" aria-labelledby="myPageLabel">
+              <div class="input-group-btn">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                  <span class="caret"></span>
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right"></ul>
+              </div>
+            </div>
+          </div>
+          <input type="text" class="form-control repeater-secondaryPaging" aria-labelledby="myPageLabel">
+          <span>of <span class="repeater-pages"></span></span>
+          <button type="button" class="btn btn-default btn-sm repeater-next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next Page</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<ul class="tree" role="tree" id="myTree">
+  <li class="tree-branch hide" data-template="treebranch" role="treeitem" aria-expanded="false">
+    <div class="tree-branch-header">
+      <button class="tree-branch-name">
+        <span class="glyphicon icon-caret glyphicon-play"></span>
+        <span class="glyphicon icon-folder glyphicon-folder-close"></span>
+        <span class="tree-label"></span>
+      </button>
+    </div>
+    <ul class="tree-branch-children" role="group"></ul>
+    <div class="tree-loader" role="alert">Loading...</div>
+  </li>
+  <li class="tree-item hide" data-template="treeitem" role="treeitem">
+    <button class="tree-item-name">
+      <span class="glyphicon icon-item fueluxicon-bullet"></span>
+      <span class="tree-label"></span>
+    </button>
+  </li>
+</ul>
+
+
+<div class="datepicker" id="myDatepicker" data-initialize="datepicker">
+  <div class="input-group">
+    <input class="form-control" id="myDatepickerInput" type="text"/>
+    <div class="input-group-btn">
+      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+        <span class="glyphicon glyphicon-calendar"></span>
+        <span class="sr-only">Toggle Calendar</span>
+      </button>
+      <div class="dropdown-menu dropdown-menu-right datepicker-calendar-wrapper" role="menu">
+        <div class="datepicker-calendar">
+          <div class="datepicker-calendar-header">
+            <button type="button" class="prev"><span class="glyphicon glyphicon-chevron-left"></span><span class="sr-only">Previous Month</span></button>
+            <button type="button" class="next"><span class="glyphicon glyphicon-chevron-right"></span><span class="sr-only">Next Month</span></button>
+            <button type="button" class="title">
+                <span class="month">
+                  <span data-month="0">January</span>
+                  <span data-month="1">February</span>
+                  <span data-month="2">March</span>
+                  <span data-month="3">April</span>
+                  <span data-month="4">May</span>
+                  <span data-month="5">June</span>
+                  <span data-month="6">July</span>
+                  <span data-month="7">August</span>
+                  <span data-month="8">September</span>
+                  <span data-month="9">October</span>
+                  <span data-month="10">November</span>
+                  <span data-month="11">December</span>
+                </span> <span class="year"></span>
+            </button>
+          </div>
+          <table class="datepicker-calendar-days">
+            <thead>
+            <tr>
+              <th>Su</th>
+              <th>Mo</th>
+              <th>Tu</th>
+              <th>We</th>
+              <th>Th</th>
+              <th>Fr</th>
+              <th>Sa</th>
+            </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <div class="datepicker-calendar-footer">
+            <button type="button" class="datepicker-today">Today</button>
+          </div>
+        </div>
+        <div class="datepicker-wheels" aria-hidden="true">
+          <div class="datepicker-wheels-month">
+            <h2 class="header">Month</h2>
+            <ul>
+              <li data-month="0"><button type="button">Jan</button></li>
+              <li data-month="1"><button type="button">Feb</button></li>
+              <li data-month="2"><button type="button">Mar</button></li>
+              <li data-month="3"><button type="button">Apr</button></li>
+              <li data-month="4"><button type="button">May</button></li>
+              <li data-month="5"><button type="button">Jun</button></li>
+              <li data-month="6"><button type="button">Jul</button></li>
+              <li data-month="7"><button type="button">Aug</button></li>
+              <li data-month="8"><button type="button">Sep</button></li>
+              <li data-month="9"><button type="button">Oct</button></li>
+              <li data-month="10"><button type="button">Nov</button></li>
+              <li data-month="11"><button type="button">Dec</button></li>
+            </ul>
+          </div>
+          <div class="datepicker-wheels-year">
+            <h2 class="header">Year</h2>
+            <ul></ul>
+          </div>
+          <div class="datepicker-wheels-footer clearfix">
+            <button type="button" class="btn datepicker-wheels-back"><span class="glyphicon glyphicon-arrow-left"></span><span class="sr-only">Return to Calendar</span></button>
+            <button type="button" class="btn datepicker-wheels-select">Select <span class="sr-only">Month and Year</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
